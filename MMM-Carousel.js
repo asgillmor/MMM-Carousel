@@ -365,7 +365,7 @@ Module.register("MMM-Carousel", {
               typeof this[i].data.config.carouselId !== "undefined" &&
               mods[s].carouselId !== this[i].data.config.carouselId
             ) {
-              break;
+              continue;
             }
             if (typeof mods[s].classes === "string") {
               // Check if we have any classes we're supposed to add
